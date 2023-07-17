@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="15dp"
+    app:cardCornerRadius="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_job_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="@string/tvJobName"
+            android:fontFamily="@font/robotobold"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="15dp"
+/>
+        <TextView
+            android:id="@+id/tv_job_sallary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/tv_job_name"
+           app:layout_constraintTop_toBottomOf="@id/tv_job_name"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:text="@string/tvJobSallary"
+            android:fontFamily="@font/robotomedium"
+            android:layout_marginTop="6dp"
+
+            />
+        <TextView
+            android:id="@+id/tv_job_opening"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/tv_job_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_job_sallary"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/tvJobOpening"
+            android:fontFamily="@font/robotomedium"
+            android:layout_marginTop="14dp"
+
+            />
+        <TextView
+            android:id="@+id/tv_job_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/tv_job_opening"
+            app:layout_constraintTop_toBottomOf="@id/tv_job_sallary"
+            android:textColor="#8D98A1"
+            android:textSize="12sp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/tvJobPosition"
+            android:fontFamily="@font/robotoregular"
+            android:layout_marginTop="14dp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_company_logo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_job_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_job_position"
+            android:src="@mipmap/ic_india"
+            android:background="@drawable/rectangle"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="17dp"
+
+            />
+        <TextView
+            android:id="@+id/tv_company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/iv_company_logo"
+           app:layout_constraintTop_toTopOf="@id/iv_company_logo"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/tvCompanyName"
+            android:fontFamily="@font/robotobold"
+            />
+        <TextView
+            android:id="@+id/tv_company_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/iv_company_logo"
+         app:layout_constraintTop_toBottomOf="@id/tv_company_name"
+            android:textColor="#8D98A1"
+            android:textSize="12sp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/tvCompanyLocation"
+            android:fontFamily="@font/robotoregular"
+            />
+        <TextView
+            android:id="@+id/tv_jobs_day_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_company_name"
+            android:layout_marginRight="12dp"
+            android:textColor="#8D98A1"
+            android:textSize="12sp"
+            android:text="@string/tvJobDaysLeft"
+            android:fontFamily="@font/robotomediumitalic"
+            />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

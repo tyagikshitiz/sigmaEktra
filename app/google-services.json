@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "678134820164",
+    "project_id": "sigmaektara",
+    "storage_bucket": "sigmaektara.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678134820164:android:a2a85c3d18841879b37b11",
+        "android_client_info": {
+          "package_name": "com.trainee.appinventiv.sigmaekatra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678134820164-g7edeu5rtkf5cr28du7fo0ht3vfl60n8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGswTHDnA2dKoirlnMDEb-pAOtO6WwCb0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678134820164-g7edeu5rtkf5cr28du7fo0ht3vfl60n8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

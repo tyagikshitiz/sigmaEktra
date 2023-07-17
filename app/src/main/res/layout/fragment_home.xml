@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rootContainer"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.HomeFragment">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/container_home"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:background="#21317B"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+>
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_photo_home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/pexels_photo"
+        android:scaleType="fitXY"
+     app:shapeAppearanceOverlay="@style/rectangle"
+        />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_photo_home"
+        app:layout_constraintBottom_toBottomOf="@id/iv_photo_home"
+        android:layout_marginRight="14dp"
+        android:src="@mipmap/ic_notification"
+        />
+    <TextView
+        android:id="@+id/tv_profile_name_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/iv_photo_home"
+        android:layout_marginTop="28dp"
+        app:layout_constraintLeft_toLeftOf="@id/iv_photo_home"
+        android:fontFamily="@font/robotobold"
+        android:text="@string/tvProfileNameHome"
+        />
+    <TextView
+        android:id="@+id/tv_find_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tv_profile_name_home"
+        android:layout_marginTop="4dp"
+        app:layout_constraintLeft_toLeftOf="@id/iv_photo_home"
+        android:fontFamily="@font/robotobold"
+        android:text="@string/tvFindJob"
+        />
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_find_job"
+        app:layout_constraintBottom_toBottomOf="@id/container_home"
+        android:layout_margin="15dp"
+        app:searchIcon="@drawable/ic_search"
+        app:queryHint="Search for jobs"
+        app:iconifiedByDefault="false"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="@color/white"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_available_jobs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/container_home"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/robotobold"
+        android:text="@string/tvAvailableJobs"
+
+        />
+    <TextView
+        android:id="@+id/tv_view_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        app:layout_constraintTop_toTopOf="@id/tv_available_jobs"
+        app:layout_constraintBottom_toBottomOf="@id/tv_available_jobs"
+        android:textSize="12sp"
+        android:fontFamily="@font/robotomedium"
+        android:text="@string/tvViewMore"
+        android:textColor="#21317B"
+        />
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="10dp"
+        app:singleLine="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_view_more"
+        >
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_all_filters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Filters"
+
+            android:textSize="12sp"
+            android:fontFamily="@font/robotobold"
+            android:textColor="@color/white"
+            app:chipBackgroundColor="#21317B"
+            app:chipStrokeWidth="1dp"
+            app:chipStrokeColor="#8D98A1"
+            app:shapeAppearanceOverlay="@style/rectangle"
+            app:closeIconSize="11dp"
+            app:closeIconTint="#8D98A1"
+            />
+
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_jobs"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/chipGroup"
+          app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="5dp"
+        tools:listitem="@layout/jobs_card"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_navigation"
+        app:labelVisibilityMode="labeled"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

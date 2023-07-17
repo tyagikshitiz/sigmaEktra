@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scorollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:background="@color/white"
+        tools:context=".ui.CreatingAccountStep1">
+
+        <ImageView
+            android:id="@+id/iv_back_creating_account"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="35dp"
+            android:src="@mipmap/ic_back"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/tv_mera_roj"
+            android:layout_width="132dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/ekatra"
+            app:layout_constraintBottom_toBottomOf="@id/iv_back_creating_account"
+            app:layout_constraintLeft_toRightOf="@id/iv_back_creating_account" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="100dp"
+                android:layout_height="7dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_marginRight="15dp"
+               android:progressTint="#21317B"
+                android:max="100"
+                app:layout_constraintBottom_toBottomOf="@id/iv_back_creating_account"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/iv_back_creating_account"
+                />
+
+<!--            <ProgressBar-->
+<!--                android:id="@+id/progressBar"-->
+<!--                android:layout_width="86dp"-->
+<!--                android:max="100"-->
+<!--                android:layout_height="7dp"-->
+<!--                app:layout_constraintRight_toRightOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="@id/iv_back_creating_account"-->
+<!--                app:layout_constraintBottom_toBottomOf="@id/iv_back_creating_account"-->
+<!--                android:layout_marginRight="15dp"-->
+<!--                style="?android:attr/progressBarStyleHorizontal"-->
+<!--                android:progressTint="#21317B"-->
+
+<!--                />-->
+        <TextView
+            android:id="@+id/tv_create_profile"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="11dp"
+            android:paddingBottom="5dp"
+            android:text="@string/tvMeraRoj"
+            android:textColor="#8D98A1"
+            android:textSize="15sp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_mera_roj" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/first"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_create_profile"
+            app:navGraph="@navigation/navigation2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

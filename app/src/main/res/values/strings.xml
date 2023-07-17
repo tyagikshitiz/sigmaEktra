@@ -1,0 +1,165 @@
+<resources>
+    <string name="app_name">SigmaEkatra</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button">Get Started</string>
+    <string name="buttonPhone">Sign In With Phone</string>
+    <string name="buttonGoogle">Sign In With Google</string>
+    <string name="buttonFacebook">Sign In With Facebook</string>
+    <string name="buttonApple">Sign In With Apple</string>
+    <string name="imageLogin">Login</string>
+    <string name="tvPhoneNo">Enter Phone Number To Login</string>
+    <string name="tvCountryCode">+91</string>
+    <string name="etPhoneNumber">Phone Number</string>
+    <string name="tvSubmit">Submit</string>
+    <string name="tvTerms">By signing up you agree to EKATRA</string>
+    <string name="tvCondition">Terms and Conditions</string>
+    <string name="tvAnd">and</string>
+    <string name="tvPrivacy">Privacy Policy</string>
+    <string name="tvVerify">Verify Phone Number</string>
+    <string name="tvEntercode">Please enter the code here to validate your phone number</string>
+    <string name="tvResendCode">RESEND CODE</string>
+    <string name="tvChooseCategory">Choose Your Category</string>
+    <string name="tvRadio1">Looking For a Job</string>
+    <string name="tvRadio2">Looking for Candidates</string>
+    <string name="tvRadio3">I am a Contractor</string>
+    <string name="tvNext">Next</string>
+    <string name="tvCreateAccount">Lets start with creating your Ekatra Account</string>
+    <string name="tvHelpsHr">This will help companies, HR and other professionals to know you better</string>
+    <string name="tvLetsStart">Lets Start</string>
+    <string name="tvMeraRoj">Create your profile and enter your details so that the employers can know you</string>
+    <string name="etName">Name</string>
+    <string name="etDob">Date Of Birth</string>
+    <string name="etEmail">Email Address</string>
+    <string name="tvChooseLanguage">Choose Language</string>
+    <string name="tvSelectLanguage">Select your preferred language</string>
+    <string name="tvEnglish">English</string>
+    <string name="tvHindi">Hindi ( हिन्दी )</string>
+    <string name="tvGetStarted">Get Started</string>
+    <string name="tvOptional">Optional</string>
+    <string name="tvGender">Gender</string>
+    <string name="tvGenderMale">Male</string>
+    <string name="tvGenderFemale">Female</string>
+    <string name="tvGenderOthers">Others</string>
+    <string name="etLocation">Location</string>
+    <string name="tvDetailsNext">Next</string>
+    <string name="tvLocation">Location</string>
+    <string name="etSearchLocation">Search for area, street name...</string>
+    <string name="tvUploadPhoto">Upload Profile Photo</string>
+    <string name="btnTakePhoto">Take Photo With Camera</string>
+    <string name="tvSpinner">Graduate</string>
+    <string name="tvExperience">Previous Work Experience</string>
+    <string name="etDistrictPresent">District</string>
+    <string name="tvDistrictPermanent">District of Permanent Residence</string>
+    <string name="tvDistrictPresent">District of Present Residence</string>
+    <string name="tvWorkExerience">Yes</string>
+    <string name="tvWorkExerienceNo">No</string>
+    <array name="education">
+        <item>Other</item>
+        <item>Graduate</item>
+        <item>Post Graduate</item>
+    </array>
+    <string name="tvPriviousSalary">Previous Salary Drawn</string>
+    <string name="tvJobCategory">Job Category</string>
+    <string name="tvPreferedLocation">Prefered Location</string>
+    <array name="workExperience">
+        <item></item>
+        <item>Construction Labor</item>
+        <item>Call Center Operator</item>
+        <item>Food Delivery</item>
+    </array>
+    <array name="location">
+        <item></item>
+        <item>Any Where In India</item>
+        <item>Delhi</item>
+        <item>Noida</item>
+        <item>Ghaziabad</item>
+    </array>
+    <string name="tvJobsAvailable">Total Jobs Available: 250</string>
+    <string name="tvProfileNameHome">Hello Ravi</string>
+    <string name="tvFindJob">Find your dream job</string>
+    <string name="tvAvailableJobs">Available Jobs</string>
+    <string name="tvViewMore">VIEW MORE</string>
+    <string name="tvJobName">Executive - BPO</string>
+    <string name="tvJobSallary">₹ 10,000 Per Month</string>
+    <string name="tvJobOpening">₹Opening:</string>
+    <string name="tvJobPosition">2 Position</string>
+    <string name="tvCompanyName">Adani Group</string>
+    <string name="tvCompanyLocation">Noida, Uttar Pradesh</string>
+    <string name="tvJobDaysLeft">4 Days ago</string>
+    <string name="tvRequirements">Requirements</string>
+    <string name="tvRequirementsDetail">We hiring for candidates and some employees for CCE for BPO inbound with no target voice process.Hiring for domestic or international process for both day and night shifts.Fresher and experience Candidate Apply
+
+</string>
+    <string name="we_hiring_for_candidates_and_some_employees_for_cce_for_bpo_inbound_with_no_target_voice_process_hiring_for_domestic_or_international_process_for_both_day_and_night_shifts_fresher_and_experience_candidate_apply">We hiring for candidates and some employees for CCE for BPO inbound with no target voice process.Hiring for domestic or international process for both day and night shifts.Fresher and experience Candidate Apply</string>
+    <string name="shift_timing_6_00_to_3_00_pm_or_10_00_to_6_00pm_n_5_days_working_n_rotational_off_n_hourly_basis_salary_n_minimum_115_rupees_in_1_hour_9_hours_shift_n_maximum_175_rupeens_2k_attendance_bonus_5k_quarterly_bonus">• Shift Timing : 6:00 to 3:00 PM or 10:00 to 6:00PM\n • 5 Days Working\n • Rotational Off\n • Hourly basis salary\n • Minimum 115 Rupees in 1 hour ,9 hours shift .\n • Maximum 175 Rupeens • 2K Attendance Bonus + 5k Quarterly Bonus</string>
+    <string name="education_and_timing">Education and Timing</string>
+    <string name="education">Education</string>
+    <string name="graduate_diploma">Graduate / Diploma</string>
+    <string name="working_days">Working Days:</string>
+    <string name="monday_to_friday">Monday to Friday</string>
+    <string name="shift_timings">Shift Timings:</string>
+    <string name="_9_00_am_5_00_pm">9:00 AM - 5:00 PM</string>
+    <string name="person_of_contact">Person Of Contact</string>
+    <string name="name">Name:</string>
+    <string name="raita_sharma">Raita Sharma</string>
+    <string name="phone_number">Phone Number:</string>
+    <string name="_91_9874563210">+91 - 9874563210</string>
+    <string name="preferred_time_for_contacting">Preferred Time For Contacting:</string>
+    <string name="_10_00_am_06_00_pm">10:00 AM - 06:00 PM</string>
+    <string name="apply_for_the_job">Apply for the Job</string>
+    <string name="all_jobs">All Jobs</string>
+    <string name="interested_jobs">Interested Jobs</string>
+    <string name="applied_jobs">Applied Jobs</string>
+    <string name="jobs">Jobs</string>
+    <string name="settings">Settings</string>
+    <string name="change_language">Change Language</string>
+    <string name="about_us">About Us</string>
+    <string name="faq_s">FAQ\'s</string>
+    <string name="logout">Logout</string>
+    <string name="update">Update</string>
+    <string name="lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry_lorem_ipsum_has_been_the_industry_s_standard_dummy_text_ever_since_the_1500s_when_an_unknown_printer_took_a_galley_of_type_and_scrambled_it_to_make_a_type_specimen_book_it_has_survived_not_only_five_centuries_but_also_the_leap_into_electronic_typesetting_remaining_essentially_unchanged_it_was_popularised_in_the_1960s_with_the_release_of_letraset_sheets_containing_lorem_ipsum_passages_and_more_recently_with_desktop_publishing_software_like_aldus_pagemaker_including_versions_of_lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="contrary_to_popular_belief_lorem_ipsum_is_not_simply_random_text_it_has_roots_in_a_piece_of_classical_latin_literature_from_45_bc_making_it_over_2000_years_old_richard_mcclintock_a_latin_professor_at_hampden_sydney_college_in_virginia_looked_up_one_of_the_more_obscure_latin_words">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.</string>
+    <string name="lorem_ipsum_is_simply_dummy_text_of_the_printing">Lorem Ipsum is simply dummy text of the printing</string>
+    <string name="lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry_lorem_ipsum_has_been_the_industry_s_standard_dummy_text_ever_since_the_1500s_when_an_unknown_printer_took_a_galley_of_type_and_scrambled_it_to_make_a_type_specimen_book_it_has_survived_not_only_five_centuries_but_also_the_leap_into_electronic_typesetting_remaining_essentially_unchanged">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</string>
+    <string name="terms_and_condition">Terms And Condition</string>
+    <string name="lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry_lorem_ipsum_has_been_the_industrys_standard_dummy_text_ever_since_the_1500s_when_an_unknown_printer_took_a_galley_of_type_and_scrambled_it_to_make_a_type_specimen_book_it_has_survived_not_only_five_centuries_but_also_the_leap_into_electronic_typesetting_remaining_essentially_unchanged_it_was_popularised_in_the_1960s_with_the_release_of_letraset_sheets_containing_lorem_ipsum_passages_and_more_recently_with_desktop_publishing_software_like_aldus_pagemaker_including_versions_of_lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="information_about_us">Information About Us</string>
+    <string name="contrary_to_popular_belief_lorem_ipsum_is_not_simply_random_text_it_has_roots_in_a_piece_of_classical_latin_literature_from_45_bc_making_it_over_2000_years_old_richard_mcclintock_a_latin_professor_at_hampden_sydney_college_in_virginia_looked_up_one_of_the_more_obscure_latin_words_consectetur_from_a_lorem_ipsum_passage_and_going_through_the_cites_of_the_word_in_classical_literature_discovered_the_undoubtable_source_lorem_ipsum_comes_from_sections_1_10_32_and_1_10_33_of">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of</string>
+    <string name="contrary_to_popular_belief_lorem_ipsum_is_not_simply_random_text_it_has_roots_in_a_piece_of_classical_latin_literature_from_45_bc_making_it_over_2000_years_old_richard_mcclintock_a_latin_professor_at_hampden_sydney_college_in_virginia_looked_up_one_of_the_more_obscure_latin_words_consectetur_from_a_lorem_ipsum_passage_and_going_through_the_cites_of_the_word_in_classical_literature_discovered_the_undoubtable_source_lorem_ipsum_comes_from_sections_1_10_32_and_1_10_33_of_de_finibus_bonorum_et_malorum_the_extremes_of_good_and_evil_by_cicero_written_in_45_bc_this_book_is_a_treatise_on_the_theory_of_ethics_very_popular_during_the_renaissance_the_first_line_of_lorem_ipsum_lorem_ipsum_dolor_sit_amet_comes_from_a_line_in_section_1_10_32">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32.</string>
+    <string name="profile">Profile</string>
+    <string name="verified">VERIFIED</string>
+    <string name="take_ekatra_test">Take EKATRA Test</string>
+    <string name="english">English</string>
+    <string name="ekatra_test">EKATRA Test</string>
+    <string name="passed">Passed</string>
+    <string name="hindi">Hindi</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="_30_10_1990">30/10/1990</string>
+    <string name="email_address">Email Address</string>
+    <string name="ravisharma_gmail_com">ravisharma@gmail.com</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="loction">Loction</string>
+    <string name="noida">Noida</string>
+    <string name="district_of_present_residence">District of Present Residence</string>
+    <string name="delhi">Delhi</string>
+    <string name="uttar_pradesh">Uttar Pradesh</string>
+    <string name="education_and_work_details">Education and Work Details</string>
+    <string name="graduate">Graduate</string>
+    <string name="previous_work_experience">Previous Work Experience</string>
+    <string name="call_center_operator">Call Center Operator</string>
+    <string name="previous_salary_drawn">Previous Salary Drawn</string>
+    <string name="_10_000_per_month">₹ 10,000 Per Month</string>
+    <string name="documents">Documents</string>
+    <string name="job_applied">Job Applied</string>
+    <string name="_1_contractor">1. Contractor</string>
+    <string name="_2_call_center_opertor">2. Call Center Opertor</string>
+    <string name="add_filters_to_your_app">Add Filters to Your App</string>
+    <string name="_3_bpo">3. BPO</string>
+    <string name="_4_trainee">4. Trainee</string>
+    <string name="_5_architect">5. Architect</string>
+
+</resources>

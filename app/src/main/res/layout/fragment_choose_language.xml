@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/fragment_choose_language_scene"
+    app:showPaths="true"
+    tools:context=".ui.ChooseLanguageFragment">
+
+    <TextView
+        android:id="@+id/tv_chooselanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="@string/tvChooseLanguage"
+        android:textColor="#0E0E0E"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_select_language"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/tvSelectLanguage"
+        android:textColor="#8D98A1"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_chooselanguage" />
+
+    <ImageView
+        android:id="@+id/iv_select_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:src="@mipmap/ic_choose_lan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_select_language" />
+
+    <TextView
+        android:id="@+id/tv_english"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/choose_category_rectangle"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="@string/tvEnglish"
+        android:textColor="#0E0E0E"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_select_language"></TextView>
+
+    <TextView
+        android:id="@+id/tv_hindi"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/choose_category_rectangle"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="@string/tvHindi"
+        android:textColor="#0E0E0E"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_english"></TextView>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintRight_toRightOf="@id/tv_english"
+        app:layout_constraintTop_toTopOf="@id/tv_english"
+
+        >
+
+        <RadioButton
+            android:id="@+id/btn_radio_english"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:buttonTint="#21317B"
+            android:checked="false"
+            app:layout_constraintBottom_toBottomOf="@id/tv_english"
+            app:layout_constraintRight_toRightOf="@id/tv_english"
+            app:layout_constraintTop_toTopOf="@id/tv_english" />
+
+        <RadioButton
+            android:id="@+id/btn_radio_hindi"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginRight="15dp"
+            android:buttonTint="#21317B"
+            android:checked="false"
+            app:layout_constraintBottom_toBottomOf="@id/tv_hindi"
+            app:layout_constraintRight_toRightOf="@id/tv_hindi"
+            app:layout_constraintTop_toTopOf="@id/tv_hindi" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_get_started"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="39dp"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="#21317B"
+        android:gravity="center"
+        android:text="@string/tvGetStarted"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radio_group" />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

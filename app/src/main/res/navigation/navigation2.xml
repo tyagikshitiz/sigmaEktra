@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation2"
+    app:startDestination="@id/abcFragment">
+
+    <fragment
+        android:id="@+id/abcFragment"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.AbcFragment"
+        android:label="fragment_abc"
+        tools:layout="@layout/fragment_abc" >
+        <action
+            android:id="@+id/action_abcFragment_to_locationFragment"
+            app:destination="@id/locationFragment" />
+        <action
+            android:id="@+id/action_abcFragment_to_residenceAddressFragment"
+            app:destination="@id/residenceAddressFragment" />
+        <action
+            android:id="@+id/action_abcFragment_to_residenceAddressFragment2"
+            app:destination="@id/residenceAddressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageUploadFragment"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.ImageUploadFragment"
+        android:label="fragment_image_upload"
+        tools:layout="@layout/fragment_image_upload" >
+        <action
+            android:id="@+id/action_imageUploadFragment_to_createAccountWorkFragment"
+            app:destination="@id/createAccountWorkFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.LocationFragment"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" />
+    <fragment
+        android:id="@+id/residenceAddressFragment"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.ResidenceAddressFragment"
+        android:label="fragment_residence_address"
+        tools:layout="@layout/fragment_residence_address" >
+        <action
+            android:id="@+id/action_residenceAddressFragment_to_imageUploadFragment"
+            app:destination="@id/imageUploadFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createAccountWorkFragment"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.CreateAccountWorkFragment"
+        android:label="fragment_create_account_work"
+        tools:layout="@layout/fragment_create_account_work" >
+        <action
+            android:id="@+id/action_createAccountWorkFragment_to_workYouDoFragment"
+            app:destination="@id/workYouDoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/workYouDoFragment"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.WorkYouDoFragment"
+        android:label="fragment_work_you_do"
+        tools:layout="@layout/fragment_work_you_do" >
+        <action
+            android:id="@+id/action_workYouDoFragment_to_navigation2"
+            app:destination="@id/navigation" />
+    </fragment>
+    <include app:graph="@navigation/navigation" />
+</navigation>

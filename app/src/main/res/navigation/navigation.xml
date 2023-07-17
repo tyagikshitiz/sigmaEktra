@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/chooseLanguageFragment">
+    <fragment
+        android:id="@+id/tutorialScreen1Fragment2"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.TutorialScreen1Fragment"
+        android:label="fragment_tutorial_screen1"
+        tools:layout="@layout/fragment_tutorial_screen1" >
+        <action
+            android:id="@+id/action_tutorialScreen1Fragment2_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_tutorialScreen1Fragment2"
+            app:destination="@id/tutorialScreen1Fragment2" />
+        <action
+            android:id="@+id/action_loginFragment_to_chooseModeFragment"
+            app:destination="@id/chooseModeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_termsAndConditionFragment2"
+            app:destination="@id/termsAndConditionFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseModeFragment"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.ChooseModeFragment"
+        android:label="fragment_choose_mode"
+        tools:layout="@layout/fragment_choose_mode" >
+
+        <action
+            android:id="@+id/action_chooseModeFragment_to_ekatraAccountFragment"
+            app:destination="@id/ekatraAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ekatraAccountFragment"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.EkatraAccountFragment"
+        android:label="fragment_ekatra_account"
+        tools:layout="@layout/fragment_ekatra_account" >
+
+        <action
+            android:id="@+id/action_ekatraAccountFragment_to_creatingAccountStep1"
+            app:destination="@id/creatingAccountStep1" />
+        <action
+            android:id="@+id/action_ekatraAccountFragment_to_chooseModeFragment"
+            app:destination="@id/chooseModeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseLanguageFragment"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.ChooseLanguageFragment"
+        android:label="fragment_choose_language"
+        tools:layout="@layout/fragment_choose_language" >
+        <action
+            android:id="@+id/action_chooseLanguageFragment_to_tutorialScreen1Fragment2"
+            app:destination="@id/tutorialScreen1Fragment2" />
+        <action
+            android:id="@+id/action_chooseLanguageFragment_to_bottomNavigationFrgment"
+            app:destination="@id/bottomNavigationFrgment" />
+        <action
+            android:id="@+id/action_chooseLanguageFragment_to_creatingAccountStep1"
+            app:destination="@id/creatingAccountStep1" />
+        <action
+            android:id="@+id/action_chooseLanguageFragment_to_chooseModeFragment"
+            app:destination="@id/chooseModeFragment" />
+        <!--        <action-->
+<!--            android:id="@+id/action_chooseLanguageFragment_self"-->
+<!--            app:destination="@id/chooseLanguageFragment" />-->
+        <!--        <action-->
+<!--            android:id="@+id/action_chooseLanguageFragment_to_creatingAccountStep1"-->
+<!--            app:destination="@id/creatingAccountStep1" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/creatingAccountStep1"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.CreatingAccountStep1"
+        android:label="fragment_creating_account_step1"
+        tools:layout="@layout/fragment_creating_account_step1" >
+        <action
+            android:id="@+id/action_creatingAccountStep1_to_ekatraAccountFragment"
+            app:destination="@id/ekatraAccountFragment" />
+        <action
+            android:id="@+id/action_creatingAccountStep1_to_locationFragment2"
+            app:destination="@id/locationFragment2" />
+        <action
+            android:id="@+id/action_creatingAccountStep1_to_bottomNavigationFrgment"
+            app:destination="@id/bottomNavigationFrgment" />
+        <!--        <action-->
+<!--            android:id="@+id/action_creatingAccountStep1_to_imageUploadFragment2"-->
+<!--            app:destination="@id/imageUploadFragment2" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/locationFragment2"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.LocationFragment"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" >
+        <action
+            android:id="@+id/action_locationFragment2_to_creatingAccountStep1"
+            app:destination="@id/creatingAccountStep1" />
+        <action
+            android:id="@+id/action_locationFragment2_to_creatingAccountStep12"
+            app:destination="@id/creatingAccountStep1" />
+        <action
+            android:id="@+id/action_locationFragment2_to_abcFragment2"
+            app:destination="@id/abcFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/workYouDoFragment2"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.WorkYouDoFragment"
+        android:label="fragment_work_you_do"
+        tools:layout="@layout/fragment_work_you_do" >
+        <action
+            android:id="@+id/action_workYouDoFragment2_to_bottomNavigationFrgment"
+            app:destination="@id/bottomNavigationFrgment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bottomNavigationFrgment"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.BottomNavigationFrgment"
+        android:label="fragment_bottom_navigation_frgment"
+        tools:layout="@layout/fragment_bottom_navigation_frgment" >
+        <action
+            android:id="@+id/action_bottomNavigationFrgment_to_jobsFragment"
+            app:destination="@id/jobsFragment" />
+        <action
+            android:id="@+id/action_bottomNavigationFrgment_to_jobsDetailFragment3"
+            app:destination="@id/jobsDetailFragment3" />
+    </fragment>
+    <action android:id="@+id/action_global_bottomNavigationFrgment" app:destination="@id/bottomNavigationFrgment" />
+    <action android:id="@+id/action_global_jobsFragment" app:destination="@id/jobsFragment" />
+    <fragment
+        android:id="@+id/jobsDetailFragment3"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.JobsDetailFragment"
+        android:label="fragment_jobs_detail"
+        tools:layout="@layout/fragment_jobs_detail" />
+    <fragment
+        android:id="@+id/termsAndConditionFragment2"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.TermsAndConditionFragment"
+        android:label="fragment_terms_and_condition"
+        tools:layout="@layout/fragment_terms_and_condition" />
+    <fragment
+        android:id="@+id/abcFragment2"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.AbcFragment"
+        android:label="fragment_abc"
+        tools:layout="@layout/fragment_abc" />
+    include app:graph="@navigation/navigation2" />
+</navigation>

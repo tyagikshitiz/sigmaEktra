@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.ImageUploadFragment">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_upload_image"
+        android:layout_width="122dp"
+        android:layout_height="122dp"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/circle"
+
+        android:background="@drawable/image_circle"
+        android:layout_marginTop="34dp"
+        />
+    <ImageView
+        android:id="@+id/placeholder"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="@id/iv_upload_image"
+        app:layout_constraintRight_toRightOf="@id/iv_upload_image"
+        app:layout_constraintTop_toTopOf="@id/iv_upload_image"
+        app:layout_constraintBottom_toBottomOf="@id/iv_upload_image"
+        android:src="@mipmap/ic_profile_placeholder"
+
+        />
+    <TextView
+        android:id="@+id/tv_upload_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_upload_image"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/robotobold"
+        android:text="@string/tvUploadPhoto"
+        android:textColor="@color/black"
+        />
+<TextView
+    android:id="@+id/tv_take_photo"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tv_upload_photo"
+    android:layout_marginTop="30dp"
+    android:textSize="16sp"
+    android:gravity="center"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:fontFamily="@font/robotobold"
+    android:background="@drawable/rectangle"
+    android:textColor="@color/white"
+    android:text="@string/btnTakePhoto"
+    android:backgroundTint="#21317B"
+    />
+    <TextView
+        android:id="@+id/tv_details_next_upload_image"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_upload_photo"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/rectangle"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="#21317B"
+        android:text="@string/tvDetailsNext"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

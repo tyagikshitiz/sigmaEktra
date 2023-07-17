@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation3"
+    app:startDestination="@id/homeFragment2">
+
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment2_to_jobsDetailFragment2"
+            app:destination="@id/jobsDetailFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/jobsDetailFragment2"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.JobsDetailFragment"
+        android:label="fragment_jobs_detail"
+        tools:layout="@layout/fragment_jobs_detail" />
+    <fragment
+        android:id="@+id/jobsFragment"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.JobsFragment"
+        android:label="fragment_jobs"
+        tools:layout="@layout/fragment_jobs" >
+        <action
+            android:id="@+id/action_jobsFragment_to_jobsDetailFragment23"
+            app:destination="@id/jobsDetailFragment2" />
+    </fragment>
+    <action android:id="@+id/action_global_homeFragment23" app:launchSingleTop="true" app:destination="@id/homeFragment2" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_chooseLanguageSettingFragment"
+            app:destination="@id/chooseLanguageSettingFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_aboutUsFragment"
+            app:destination="@id/aboutUsFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_faqFragment"
+            app:destination="@id/faqFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_termsAndConditionFragment"
+            app:destination="@id/termsAndConditionFragment" />
+    </fragment><action android:id="@+id/action_global_settingFragment" app:launchSingleTop="true" app:destination="@id/settingFragment"/>
+    <fragment
+        android:id="@+id/jobTablayoutFragment"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.JobTablayoutFragment"
+        android:label="fragment_job_tablayout"
+        tools:layout="@layout/fragment_job_tablayout" >
+        <action
+            android:id="@+id/action_jobTablayoutFragment_to_jobsDetailFragment2"
+            app:destination="@id/jobsDetailFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/interestedJobFragment"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.InterestedJobFragment"
+        android:label="fragment_interested_job"
+        tools:layout="@layout/fragment_interested_job" />
+    <fragment
+        android:id="@+id/appliedJobFragment"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.AppliedJobFragment"
+        android:label="fragment_applied_job"
+        tools:layout="@layout/fragment_applied_job" />
+    <action android:id="@+id/action_global_jobTablayoutFragment" app:launchSingleTop="true" app:destination="@id/jobTablayoutFragment" />
+    <fragment
+        android:id="@+id/chooseLanguageSettingFragment"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.ChooseLanguageSettingFragment"
+        android:label="fragment_choose_language_setting"
+        tools:layout="@layout/fragment_choose_language_setting" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/faqFragment"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.FaqFragment"
+        android:label="fragment_faq"
+        tools:layout="@layout/fragment_faq" />
+    <fragment
+        android:id="@+id/termsAndConditionFragment"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.TermsAndConditionFragment"
+        android:label="fragment_terms_and_condition"
+        tools:layout="@layout/fragment_terms_and_condition" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.trainee.appinventiv.sigmaekatra.ui.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" /><action android:id="@+id/action_global_profileFragment" app:launchSingleTop="true" app:destination="@id/profileFragment"/>
+</navigation>
